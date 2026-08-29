@@ -1,0 +1,5 @@
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+---> System.DllNotFoundException: libc.so.6
+  at BepInEx.Preloader.PlatformUtils:uname_linux(...)
+  at BepInEx.Preloader.PlatformUtils.SetPlatform()
+  at BepInEx.Preloader.PreloaderRunner.PreloaderPreMain()

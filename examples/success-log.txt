@@ -1,0 +1,7 @@
+[Info   :   BepInEx] System platform: Bits64, MacOS
+[Message:   BepInEx] Preloader started
+[Message:   BepInEx] Preloader finished
+[Info   :   BepInEx] Detected Unity version: v2017.4.8f1
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Message:   BepInEx] Chainloader startup complete
