@@ -339,6 +339,8 @@ examples
 Run:
 
 ```bash
+unzip Overcooked2-BepInEx-macOS-fix.zip
+cd Overcooked-2-about-the-BepInEx
 ./patch_bepinex.sh \
 "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2"
 ```
