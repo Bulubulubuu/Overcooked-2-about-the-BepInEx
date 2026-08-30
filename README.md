@@ -1,7 +1,7 @@
 # Overcooked! 2 BepInEx Fix for Apple Silicon macOS
 
 This guide explains how to get **BepInEx working with Overcooked! 2 on an Apple Silicon Mac**.
-AND HERE THE ZIP IS THE SAME WITH DIRECTORY!
+The ZIP download contains the same repository files as the cloned version.
 
 The main problem is that BepInEx may incorrectly detect macOS as Linux and crash with:
 
