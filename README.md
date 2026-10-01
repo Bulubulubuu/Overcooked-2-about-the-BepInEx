@@ -166,15 +166,19 @@ If you can see these files, continue to the next step.
 
 # Step 6 — Check Homebrew
 
-Copy this command:
+BepInEx compatibility tools require Homebrew.
+
+First, check whether Homebrew is already installed.
+
+Copy the following command into Terminal:
 
 ```bash
 brew --version
 ```
 
-Press Enter.
+Press **Enter**.
 
-## If you see something like:
+### If you see something like:
 
 ```text
 Homebrew 4.x.x
@@ -182,9 +186,13 @@ Homebrew 4.x.x
 
 Homebrew is already installed.
 
-👉 Skip to **Step 8**.
+✅ You do NOT need to install it again.
 
-## If you see:
+👉 Go directly to **Step 8 — Check Mono**.
+
+---
+
+### If you see:
 
 ```text
 command not found: brew
@@ -192,49 +200,79 @@ command not found: brew
 
 Homebrew is not installed.
 
-Continue to **Step 7**.
+Continue below.
 
 ---
 
 # Step 7 — Install Homebrew
 
-Go to the official Homebrew website:
+Copy the following command into Terminal:
 
-https://brew.sh
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
-Copy the installation command shown on the website and paste it into Terminal.
+Press **Enter**.
 
-Press Enter.
+This is the official Homebrew installation command.
 
-During installation, macOS may ask for your computer password.
-
-When typing your password in Terminal:
+During installation, Terminal may ask for your Mac login password:
 
 ```text
-Nothing will appear on the screen.
+Password:
 ```
+
+Type your Mac password and press **Enter**.
+
+⚠️ When typing a password in Terminal, nothing will appear on the screen.
+
+You will not see:
+
+```text
+****
+```
+
+or any other characters.
 
 This is normal.
 
-Type your password and press Enter.
+---
 
-When Homebrew finishes installing, close Terminal and open it again.
+## Wait for Homebrew to finish installing
 
-Then run:
+Do not close Terminal while Homebrew is installing.
+
+At the end of the installation, Homebrew may display:
+
+```text
+==> Next steps:
+```
+
+If it gives you commands to run, copy and run those commands.
+
+This is especially important on Apple Silicon Macs.
+
+---
+
+## Check Homebrew again
+
+After installation, run:
 
 ```bash
 brew --version
 ```
 
-If you now see:
+If you see something similar to:
 
 ```text
 Homebrew 4.x.x
 ```
 
-continue to the next step.
+✅ Homebrew is installed successfully.
 
----
+Continue to:
+
+**Step 8 — Check Mono**
 
 # Step 8 — Check Mono
 
