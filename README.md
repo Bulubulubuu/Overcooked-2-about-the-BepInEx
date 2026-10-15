@@ -1,63 +1,63 @@
-# 🍳 Overcooked! 2 — BepInEx Fix for Apple Silicon macOS
+# 🍳 Overcooked! 2 — BepInEx Fix for macOS (Apple Silicon)
 
-This guide is for **Overcooked! 2 on macOS**, especially Apple Silicon Macs (M1 / M2 / M3 / M4).
+A simple, beginner-friendly guide to installing BepInEx for **Overcooked! 2 on Apple Silicon Macs (M1 / M2 / M3 / M4 and newer)**.
 
-No programming experience is required.
-
-The required BepInEx files are already included in the ZIP file in this repository, so you do **not** need to download BepInEx separately.
-
-26.10.15 update：Fixed issues where Arcade mode matchmaking failed and friend invitations did not trigger a pop-up.
----
-
-# Before You Start
-
-This guide is intended for:
-
-```text
-Game: Overcooked! 2 (Steam)
-Computer: Apple Silicon Mac
-Game architecture: x86_64
-Unity version: 2017.4.8f1
-Unity backend: Mono
-BepInEx: 5.4.23.x
-```
-
-> ⚠️ This fix is specifically intended for the macOS version of Overcooked! 2 described above.
->
-> Other game versions or BepInEx versions may behave differently.
+**No coding experience required!**
 
 ---
 
-# Step 1 — Download the ZIP file
+## 🛠 What Does This Fix?
 
-At the top of this GitHub page, find:
+Some Mac users have trouble getting BepInEx to work with Overcooked! 2.
 
-```text
-Overcooked2-BepInEx-macOS-fix.zip
-```
+Common problems include:
 
-Click the file and download it.
+- BepInEx does not start.
+- BepInEx fails to load on macOS.
+- `libc.so.6` errors.
+- The game starts, but BepInEx does not load.
+- The `BepInEx/plugins` folder is missing.
 
-After downloading, double-click the ZIP file to extract it.
+This repository provides a prepared BepInEx installation package with a macOS compatibility fix.
 
-You should now have a folder containing the BepInEx files.
+**You do NOT need to:**
+
+- ❌ Install Homebrew
+- ❌ Install Mono
+- ❌ Download BepInEx separately
+- ❌ Compile or modify any files
+- ❌ Run patch scripts
+
+Just download, copy, and follow the steps below!
 
 ---
 
-# Step 2 — Open the Overcooked! 2 game folder
+# 🚀 Installation Guide
 
-Open Steam.
+## Step 1 — Download the Files
 
-Go to:
+1. Open this repository.
+2. Find the provided BepInEx installation ZIP file.
+3. Click the ZIP file.
+4. Click **Download**.
+5. Double-click the downloaded ZIP to extract it.
 
-```text
-Library
-→ Right-click Overcooked! 2
-→ Manage
-→ Browse local files
-```
+You should now have a folder containing the prepared BepInEx files.
 
-Finder should open the Overcooked! 2 folder.
+> ⚠️ Download the BepInEx installation ZIP provided in this repository, not the entire repository using **Code → Download ZIP**.
+
+**Once extracted, continue to Step 2.**
+
+---
+
+## Step 2 — Open Your Game Folder
+
+1. Open **Steam**.
+2. Go to **Library**.
+3. Right-click **Overcooked! 2**.
+4. Select **Manage → Browse local files**.
+
+Finder will open your game folder.
 
 You should see:
 
@@ -65,281 +65,263 @@ You should see:
 Overcooked2.app
 ```
 
-⚠️ Keep this Finder window open.
+**Keep this Finder window open.**
 
 ---
 
-# Step 3 — Copy the files into the game folder
+## Step 3 — Copy the Files
 
-Open the folder you extracted in **Step 1**.
+1. Open the folder you extracted in Step 1.
+2. Select the BepInEx installation files inside it.
+3. Copy them into the game folder opened in Step 2.
 
-Copy the included BepInEx files into the same folder as:
-
-```text
-Overcooked2.app
-```
-
-After copying, the important files should look similar to:
+Your game folder should look similar to this:
 
 ```text
 Overcooked! 2/
+│
+├── Overcooked2.app
 ├── BepInEx/
-├── Overcooked2.app/
 ├── libdoorstop.dylib
 └── run_bepinex.sh
 ```
 
-Depending on the package, you may also see files such as:
+**Important:**
 
-```text
-doorstop_libs/
-changelog.txt
-```
+- Copy the files **next to** `Overcooked2.app`.
+- Do NOT put them inside `Overcooked2.app`.
+- Do NOT delete `Overcooked2.app`.
+- Do NOT create an extra folder containing all the BepInEx files.
 
-If you do not see `doorstop_libs`, do not worry.
+If you already have BepInEx installed, back up your existing `BepInEx` folder before replacing it. In particular, save your `plugins` and `config` folders.
 
-The important files are:
+> 💡 Some packages may not contain a `doorstop_libs` folder. This is normal if you are using the complete package provided here.
 
-```text
-BepInEx
-Overcooked2.app
-libdoorstop.dylib
-run_bepinex.sh
-```
+**Files copied? Continue to Step 4.**
 
 ---
 
-# Step 4 — Open Terminal
+## Step 4 — Open Terminal
 
-Open:
+Don't worry! You only need to copy and paste one command.
 
-```text
-Finder
-→ Applications
-→ Utilities
-→ Terminal
-```
+1. Press **Command (⌘) + Space**.
+2. Type `Terminal`.
+3. Press **Enter**.
 
-Or press:
-
-```text
-Command + Space
-```
-
-search for:
-
-```text
-Terminal
-```
-
-and press Enter.
+A Terminal window will open.
 
 ---
 
-# Step 5 — Go to the Overcooked! 2 folder
+## Step 5 — Enable BepInEx
 
-Copy the following command into Terminal:
-
-```bash
-cd "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2"
-```
-
-Press **Enter**.
-
-Then type:
-
-```bash
-ls
-```
-
-You should be able to see:
-
-```text
-BepInEx
-Overcooked2.app
-libdoorstop.dylib
-run_bepinex.sh
-```
-
-If you can see these files, continue to the next step.
-
----
-
-# Step 6 — Check Homebrew
-
-BepInEx compatibility tools require Homebrew.
-
-First, check whether Homebrew is already installed.
-
-Copy the following command into Terminal:
-
-```bash
-brew --version
-```
-
-Press **Enter**.
-
-### If you see something like:
-
-```text
-Homebrew 4.x.x
-```
-
-Homebrew is already installed.
-
-✅ You do NOT need to install it again.
-
-👉 Go directly to **Step 8 — Check Mono**.
-
----
-
-### If you see:
-
-```text
-command not found: brew
-```
-
-Homebrew is not installed.
-
-Continue below.
-
----
-
-# Step 7 — Install Homebrew
-
-Copy the following command into Terminal:
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Press **Enter**.
-
-This is the official Homebrew installation command.
-
-During installation, Terminal may ask for your Mac login password:
-
-```text
-Password:
-```
-
-Type your Mac password and press **Enter**.
-
-⚠️ When typing a password in Terminal, nothing will appear on the screen.
-
-You will not see:
-
-```text
-****
-```
-
-or any other characters.
-
-This is normal.
-
----
-
-## Wait for Homebrew to finish installing
-
-Do not close Terminal while Homebrew is installing.
-
-At the end of the installation, Homebrew may display:
-
-```text
-==> Next steps:
-```
-
-If it gives you commands to run, copy and run those commands.
-
-This is especially important on Apple Silicon Macs.
-
----
-
-## Check Homebrew again
-
-After installation, run:
-
-```bash
-brew --version
-```
-
-If you see something similar to:
-
-```text
-Homebrew 4.x.x
-```
-
-✅ Homebrew is installed successfully.
-
-Continue to:
-
-**Step 8 — Check Mono**
-
-# Step 8 — Check Mono
-
-Run:
-
-```bash
-mono --version
-```
-
-## If you see something similar to:
-
-```text
-Mono JIT compiler version 6.x
-```
-
-Mono is already installed.
-
-👉 Continue to **Step 9**.
-
-## If you see:
-
-```text
-command not found: mono
-```
-
-install Mono with:
-
-```bash
-brew install mono
-```
-
-Wait for the installation to finish.
-
-Then check again:
-
-```bash
-mono --version
-```
-
----
-
-# Step 9 — Give BepInEx permission to run
-
-Copy and run:
+Copy the following command:
 
 ```bash
 chmod +x "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/run_bepinex.sh"
 ```
 
-There may be no message after running this command.
+Paste it into Terminal and press **Enter**.
 
-That is normal.
+### ✅ If nothing happens
+
+That's normal!
+
+The command usually produces no output when successful.
+
+**Continue to Step 6.**
+
+### ❌ If you see:
+
+```text
+No such file or directory
+```
+
+The game may be installed in a different location, or the files were not copied correctly.
+
+Go back to Step 2 and check your game folder.
 
 ---
 
-# Step 10 — Remove macOS quarantine
+## Step 6 — Get Your Steam Launch Command
 
-macOS may block downloaded BepInEx files.
+Copy this command into Terminal:
 
-First make sure you are inside the game folder:
+```bash
+echo "\"$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/run_bepinex.sh\" %command%"
+```
+
+Press **Enter**.
+
+Terminal will display something similar to:
+
+```text
+"/Users/yourname/Library/Application Support/Steam/steamapps/common/Overcooked! 2/run_bepinex.sh" %command%
+```
+
+**Copy the entire line that Terminal displays.**
+
+You do NOT need to change `yourname` manually.
+
+The command automatically uses your Mac username.
+
+---
+
+## Step 7 — Set Steam Launch Options
+
+1. Open **Steam**.
+2. Go to **Library**.
+3. Right-click **Overcooked! 2**.
+4. Click **Properties**.
+5. Select **General**.
+6. Find **Launch Options**.
+7. Paste the command you copied in Step 6.
+
+It should look similar to:
+
+```text
+"/Users/yourname/Library/Application Support/Steam/steamapps/common/Overcooked! 2/run_bepinex.sh" %command%
+```
+
+⚠️ **Important:**
+
+Make sure the command ends with:
+
+```text
+%command%
+```
+
+Keep the quotation marks around the file path.
+
+**Done? Continue to Step 8.**
+
+---
+
+## Step 8 — Restart Steam and Launch the Game
+
+1. Completely quit Steam using **Steam → Quit Steam**.
+2. Open Steam again.
+3. Go to your Library.
+4. Click **Play** on Overcooked! 2.
+
+**Always launch the game through Steam when using this setup.**
+
+If the game opens successfully, continue to the next step.
+
+---
+
+# ✅ Check If BepInEx Is Working
+
+## Step 9 — Check the BepInEx Log
+
+Open your game folder again:
+
+**Steam → Library → Overcooked! 2 → Manage → Browse local files**
+
+Open:
+
+```text
+BepInEx/
+```
+
+Look for:
+
+```text
+LogOutput.log
+```
+
+Open it with a text editor.
+
+If you see:
+
+```text
+Preloader started
+Preloader finished
+Chainloader ready
+Chainloader started
+Chainloader startup complete
+```
+
+🎉 **Congratulations! BepInEx is working!**
+
+### What if you see `0 plugins to load`?
+
+Don't worry!
+
+```text
+0 plugins to load
+```
+
+is NOT an error.
+
+It simply means BepInEx is running, but you haven't installed any mods yet.
+
+---
+
+# 🎮 How to Install Mods
+
+1. Download a mod that is compatible with your game and BepInEx version.
+2. Open your Overcooked! 2 game folder.
+3. Open:
+
+```text
+BepInEx/plugins/
+```
+
+4. Copy the mod files into this folder.
+5. Restart Overcooked! 2 through Steam.
+
+Some mods have additional installation instructions. Follow the instructions provided by the mod creator.
+
+---
+
+# ❓ Troubleshooting
+
+## 1. I can't find `doorstop_libs`
+
+This is usually not a problem.
+
+Some BepInEx packages use a different folder structure.
+
+Make sure you have:
+
+```text
+BepInEx/
+libdoorstop.dylib
+run_bepinex.sh
+Overcooked2.app
+```
+
+If these files are present, continue with the installation.
+
+---
+
+## 2. Terminal says `No such file or directory`
+
+Your game might not be installed in the default Steam location.
+
+To find the correct location:
+
+1. Open Steam.
+2. Right-click Overcooked! 2.
+3. Select **Manage → Browse local files**.
+4. Check that `run_bepinex.sh` is in the same folder as `Overcooked2.app`.
+
+If your game is installed elsewhere, replace the default path in the Terminal commands with the actual path.
+
+---
+
+## 3. macOS blocks the downloaded files
+
+If macOS blocks BepInEx, first make sure the files came from a source you trust.
+
+Then open Terminal and run:
 
 ```bash
 cd "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2"
 ```
 
-Then copy and run these commands:
+Next, run:
 
 ```bash
 xattr -dr com.apple.quarantine BepInEx 2>/dev/null || true
@@ -347,23 +329,15 @@ xattr -d com.apple.quarantine libdoorstop.dylib 2>/dev/null || true
 xattr -d com.apple.quarantine run_bepinex.sh 2>/dev/null || true
 ```
 
-No output is normal.
+Restart Steam and try again.
 
 ---
 
-# Step 11 — Tell BepInEx which game to launch
+## 4. The game opens, but BepInEx doesn't load
 
-This step is important.
+First, check that your Steam Launch Options are correct.
 
-Copy the entire command below:
-
-```bash
-sed -i '' 's/^executable_name=.*/executable_name="Overcooked2.app"/' "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/run_bepinex.sh"
-```
-
-Press Enter.
-
-Now check it:
+Next, open Terminal and run:
 
 ```bash
 grep '^executable_name=' "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/run_bepinex.sh"
@@ -375,306 +349,23 @@ You should see:
 executable_name="Overcooked2.app"
 ```
 
-✅ If you see this, continue.
+If you see something different, run:
+
+```bash
+sed -i '' 's/^executable_name=.*/executable_name="Overcooked2.app"/' "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/run_bepinex.sh"
+```
+
+Then restart Steam and try again.
 
 ---
 
-# Step 12 — Apply the macOS BepInEx fix
+## 5. I see `0 plugins to load`
 
-Now we need to apply the compatibility fix included in this repository.
+This is normal.
 
-Go to the folder where you downloaded this repository.
+It means BepInEx started successfully, but no compatible plugins were found.
 
-If you downloaded the repository to your Desktop, open Terminal and use:
-
-```bash
-cd "$HOME/Desktop/Overcooked-2-about-the-BepInEx"
-```
-
-If your folder has a different name or is somewhere else, you can also type:
-
-```bash
-cd 
-```
-
-with a space after `cd`, then drag the repository folder into the Terminal window and press Enter.
-
-Now run:
-
-```bash
-chmod +x patch_bepinex.sh
-```
-
-Then run:
-
-```bash
-./patch_bepinex.sh "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2"
-```
-
-Wait for the patch to finish.
-
-⚠️ Do not close Terminal while the patch is running.
-
----
-
-# Step 13 — Check the patch result
-
-After the patch finishes, run:
-
-```bash
-ls -lh "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/BepInEx/core/BepInEx.Preloader.dll"*
-```
-
-The important thing is:
-
-```text
-BepInEx.Preloader.dll
-```
-
-must **NOT** show:
-
-```text
-0B
-```
-
-If it shows a normal file size such as:
-
-```text
-42K
-```
-
-you can continue.
-
-### If `BepInEx.Preloader.dll` shows `0B`
-
-Do **not** start the game yet.
-
-If this file exists:
-
-```text
-BepInEx.Preloader.dll.patched
-```
-
-you can restore it with:
-
-```bash
-cp "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/BepInEx/core/BepInEx.Preloader.dll.patched" \
-"$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/BepInEx/core/BepInEx.Preloader.dll"
-```
-
-Then check the file size again.
-
----
-
-# Step 14 — Configure Steam Launch Options
-
-Now open Steam.
-
-Go to:
-
-```text
-Library
-→ Right-click Overcooked! 2
-→ Properties
-→ General
-→ Launch Options
-```
-
-We need your macOS username.
-
-In Terminal, run:
-
-```bash
-whoami
-```
-
-For example, if Terminal prints:
-
-```text
-jennylyu
-```
-
-your Steam Launch Option should be:
-
-```text
-"/Users/jennylyu/Library/Application Support/Steam/steamapps/common/Overcooked! 2/run_bepinex.sh" %command%
-```
-
-Replace `jennylyu` with **your own username**.
-
-You can also generate the correct line automatically by running:
-
-```bash
-echo "\"$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/run_bepinex.sh\" %command%"
-```
-
-Copy the output and paste it into Steam Launch Options.
-
-⚠️ Important:
-
-```text
-Keep the quotation marks.
-Keep the space before %command%.
-```
-
-The end must be:
-
-```text
-%command%
-```
-
-NOT:
-
-```text
-%command/%
-```
-
----
-
-# Step 15 — Restart Steam
-
-Completely quit Steam.
-
-Do not only close the Steam window.
-
-Use:
-
-```text
-Steam
-→ Quit Steam
-```
-
-Then reopen Steam.
-
----
-
-# Step 16 — Start Overcooked! 2
-
-Launch **Overcooked! 2 from Steam normally**.
-
-Do not launch `Overcooked2.app` directly from Finder for this test.
-
-Wait until the game reaches the main menu.
-
-Then quit the game.
-
----
-
-# Step 17 — Check whether BepInEx worked
-
-Open Terminal and run:
-
-```bash
-cd "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2"
-```
-
-Then:
-
-```bash
-ls BepInEx
-```
-
-A successful first launch may create folders/files such as:
-
-```text
-cache
-config
-patchers
-plugins
-LogOutput.log
-```
-
-Now check the log:
-
-```bash
-tail -100 BepInEx/LogOutput.log
-```
-
-A successful startup should contain lines similar to:
-
-```text
-Preloader started
-Preloader finished
-Chainloader ready
-Chainloader started
-Chainloader startup complete
-```
-
-If you see:
-
-```text
-0 plugins to load
-```
-
-that is **NOT an error**.
-
-It simply means BepInEx is working but you have not installed any mods yet.
-
-🎉 BepInEx is now running.
-
----
-
-# Step 18 — Install Mods
-
-BepInEx plugins normally go into:
-
-```text
-BepInEx/plugins/
-```
-
-For example:
-
-```text
-Overcooked! 2/
-└── BepInEx/
-    └── plugins/
-        └── ExamplePlugin.dll
-```
-
-After adding a plugin, restart Overcooked! 2 from Steam.
-
-Then check:
-
-```bash
-tail -100 "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/BepInEx/LogOutput.log"
-```
-
----
-
-# Troubleshooting
-
-## `doorstop_libs` is missing
-
-Some packages may not contain a separate:
-
-```text
-doorstop_libs/
-```
-
-folder.
-
-Check whether your game folder contains:
-
-```text
-BepInEx/
-libdoorstop.dylib
-run_bepinex.sh
-Overcooked2.app/
-```
-
-If these files are present, continue with the guide.
-
----
-
-## `0 plugins to load`
-
-This is normal:
-
-```text
-[Info   : BepInEx] 0 plugins to load
-```
-
-It means BepInEx started successfully but there are currently no plugins inside:
+Check that your mods are installed in:
 
 ```text
 BepInEx/plugins/
@@ -682,209 +373,60 @@ BepInEx/plugins/
 
 ---
 
-## HarmonyX `isBatchMode` warning
+## 6. I get a `libc.so.6` error
 
-You may see:
+This usually means the macOS compatibility fix did not work correctly.
 
-```text
-[Warning: HarmonyX] AccessTools.Property:
-Could not find property for type UnityEngine.Application
-and name isBatchMode
-```
+Make sure you copied the complete BepInEx package provided in this repository.
 
-If the log later reaches:
+Do not mix files from different BepInEx versions.
 
-```text
-Chainloader startup complete
-```
-
-BepInEx has completed startup.
+If the problem continues, please open a GitHub Issue and include your BepInEx log.
 
 ---
 
-## `libc.so.6` error
+# 🔄 How to Disable BepInEx
 
-You may see:
+If you want to launch Overcooked! 2 without BepInEx:
 
-```text
-System.DllNotFoundException: libc.so.6
-```
+1. Open Steam.
+2. Go to **Library**.
+3. Right-click **Overcooked! 2**.
+4. Select **Properties → General**.
+5. Find **Launch Options**.
+6. Remove the BepInEx launch command.
 
-or:
+Steam will no longer use the BepInEx launch script.
 
-```text
-BepInEx.Preloader.PlatformUtils:uname_linux
-```
-
-This is the compatibility problem that this repository attempts to fix.
-
-Do not repeatedly run the patch if it fails.
-
-Check the size of:
-
-```bash
-ls -lh "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/BepInEx/core/BepInEx.Preloader.dll"*
-```
-
-and open an Issue with the output.
+You do not need to delete the game.
 
 ---
 
-## `BadImageFormatException`
+# 💬 Need Help?
 
-If you see:
+If you encounter any problems, please open an Issue:
 
-```text
-System.BadImageFormatException:
-Format of the executable (.exe) or library (.dll) is invalid.
-```
+https://github.com/Bulubulubuu/Overcooked-2-about-the-BepInEx/issues
 
-check:
+Please include:
 
-```bash
-file "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/BepInEx/core/BepInEx.Preloader.dll"
-```
+- Your Mac model (M1 / M2 / M3 / M4, etc.).
+- Your macOS version.
+- A screenshot of the error.
+- Your `BepInEx/LogOutput.log` file, if available.
 
-and:
-
-```bash
-ls -lh "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/BepInEx/core/BepInEx.Preloader.dll"*
-```
-
-This may mean the DLL is damaged, empty, or the installed BepInEx version is different from the version expected by the patch.
+Please remove personal information from logs before sharing them.
 
 ---
 
-## BepInEx reports `Bits64, iOS`
+# ⚠️ Disclaimer
 
-Some BepInEx / MonoMod.Utils versions may use different platform enum values.
+This is an unofficial community guide.
 
-If your log says:
+This project is not affiliated with Team17, Steam, Unity, or the BepInEx developers.
 
-```text
-System platform: Bits64, iOS
-```
+The game itself is not included.
 
-but still reaches:
+You must own a legitimate copy of Overcooked! 2.
 
-```text
-Preloader finished
-Chainloader started
-Chainloader startup complete
-```
-
-please save your:
-
-```text
-BepInEx/LogOutput.log
-```
-
-and report the BepInEx version when opening an Issue.
-
-Do not repeatedly patch the DLL.
-
----
-
-# How to Restore the Original Preloader
-
-The patch tool may create backup files such as:
-
-```text
-BepInEx.Preloader.dll.original
-BepInEx.Preloader.dll.patched
-```
-
-If you need to restore the original:
-
-```bash
-cd "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/BepInEx/core"
-```
-
-Then:
-
-```bash
-cp BepInEx.Preloader.dll.original BepInEx.Preloader.dll
-```
-
-Check:
-
-```bash
-ls -lh BepInEx.Preloader.dll*
-```
-
----
-
-# Important Notes
-
-- This project is for the **Steam macOS version of Overcooked! 2**.
-- The game itself is **not included**.
-- You must own and install Overcooked! 2 through Steam.
-- Do not delete `Overcooked2.app`.
-- Do not repeatedly run the patch when an error occurs.
-- Always keep a backup of the original `BepInEx.Preloader.dll`.
-- Different BepInEx versions may behave differently.
-- If `Chainloader startup complete` appears, BepInEx has completed its startup process.
-
----
-
-# Repository Files
-
-```text
-Overcooked2-BepInEx-macOS-fix.zip
-patch_bepinex.sh
-patch_platform.cs
-README.md
-examples/
-```
-
-`Overcooked2-BepInEx-macOS-fix.zip`
-
-Contains the files prepared for this installation guide.
-
-`patch_bepinex.sh`
-
-Runs the macOS compatibility patch.
-
-`patch_platform.cs`
-
-Contains the patch logic used by the shell script.
-
-`examples/`
-
-Contains example logs for troubleshooting.
-
----
-
-# Need Help?
-
-If the installation does not work, please open a GitHub Issue.
-
-Please include the output of:
-
-```bash
-file "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/Overcooked2.app/Contents/MacOS/Overcooked2"
-```
-
-and:
-
-```bash
-ls -lh "$HOME/Library/Application Support/Steam/steamapps/common/Overcooked! 2/BepInEx/core/BepInEx.Preloader.dll"*
-```
-
-If this file exists, also include:
-
-```text
-BepInEx/LogOutput.log
-```
-
-This makes troubleshooting much easier.
-
----
-
-# Disclaimer
-
-This is an unofficial community fix.
-
-Overcooked! 2, Team17, BepInEx, Unity, Steam, and other mentioned projects belong to their respective owners.
-
-Use this project at your own risk.
+Use third-party mods at your own risk.
