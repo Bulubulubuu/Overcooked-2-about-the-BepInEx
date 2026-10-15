@@ -6,6 +6,7 @@ No programming experience is required.
 
 The required BepInEx files are already included in the ZIP file in this repository, so you do **not** need to download BepInEx separately.
 
+26.10.15 update：Fixed issues where Arcade mode matchmaking failed and friend invitations did not trigger a pop-up.
 ---
 
 # Before You Start
