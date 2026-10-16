@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "resourceId": "OC2HostUtilitiesResource",
+  "version": "1.0.5",
+  "minModVersion": "1.9.0",
+  "resourceFormat": 1,
+  "sourceCommit": "5dcde704c73b2355e4fd2fa0789a3e6582295c76"
+}

@@ -1,0 +1,40 @@
+[2026/09/07 周一 21:47:48.93] watcher started, keep=v1.8.2
+[2026/09/07 周一 21:47:48.93] install root: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\OC2HostUtilities
+[2026/09/07 周一 21:47:48.93] legacy root: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\CHA
+[2026/09/07 周一 21:47:48.94] legacy ClientUtilities root: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\ClientUtilities
+[2026/09/07 周一 21:47:48.95] version dir: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\OC2HostUtilities\v1.8.2
+[2026/09/07 周一 21:47:48.95] version pending: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\OC2HostUtilities\v1.8.2.pending.tmp
+[2026/09/07 周一 21:47:48.96] old version count: 
+[2026/09/07 周一 21:47:48.96] mode: wait for natural game exit
+[2026/09/07 周一 21:47:48.97] launch after apply: true
+[2026/09/07 周一 21:47:49.10] waiting Overcooked2.exe
+[2026/09/07 周一 21:47:50.33] waiting Overcooked2.exe
+[2026/09/07 周一 21:47:51.26] waiting Overcooked2.exe
+[2026/09/07 周一 21:47:52.27] waiting Overcooked2.exe
+[2026/09/07 周一 21:47:53.28] waiting Overcooked2.exe
+[2026/09/07 周一 21:47:54.30] Overcooked2.exe exited
+[2026/09/07 周一 21:47:54.30] waiting 1 second after game exit
+[2026/09/07 周一 21:47:55.13] applying pending version directory
+[2026/09/07 周一 21:47:55.13] no pending version dir, skip version switch
+[2026/09/07 周一 21:47:55.14] pending version apply finished
+[2026/09/07 周一 21:47:55.15] applying resource update
+[2026/09/07 周一 21:47:55.15] resource tmp: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\OC2HostUtilities\OC2HostUtilitiesResource.tmp
+[2026/09/07 周一 21:47:55.16] resource dir: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\OC2HostUtilities\OC2HostUtilitiesResource
+[2026/09/07 周一 21:47:55.16] no pending resource tmp, skip resource update
+[2026/09/07 周一 21:47:55.17] resource update finished
+[2026/09/07 周一 21:47:55.18] legacy root does not exist, skip: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\CHA
+[2026/09/07 周一 21:47:55.19] legacy cleanup finished
+[2026/09/07 周一 21:47:55.19] legacy ClientUtilities root does not exist, skip: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\ClientUtilities
+[2026/09/07 周一 21:47:55.20] legacy ClientUtilities cleanup finished
+[2026/09/07 周一 21:47:55.21] legacy file missing, skip: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\OC2HostUtilities\HostUtilities.install-manifest.txt
+[2026/09/07 周一 21:47:55.21] legacy file missing, skip: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\OC2HostUtilities\HostUtilities.dll
+[2026/09/07 周一 21:47:55.22] legacy file missing, skip: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\OC2HostUtilities\HostUtilities.pdb
+[2026/09/07 周一 21:47:55.23] legacy dir missing, skip: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\OC2HostUtilities\ConfigurationManager
+[2026/09/07 周一 21:47:55.24] legacy dir missing, skip: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\OC2HostUtilities\Audio
+[2026/09/07 周一 21:47:55.25] legacy dir missing, skip: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\OC2HostUtilities\ClientUtilities
+[2026/09/07 周一 21:47:55.25] legacy file cleanup finished
+[2026/09/07 周一 21:47:55.26] deleting old version dir: D:\1\steamapps\common\Overcooked! 2\BepInEx\plugins\OC2HostUtilities\v1.8.0
+[2026/09/07 周一 21:47:55.27] old version cleanup finished
+[2026/09/07 周一 21:47:55.27] waiting 1 seconds before launch
+[2026/09/07 周一 21:47:56.19] launching game
+[2026/09/07 周一 21:47:56.57] launch command sent
