@@ -44,7 +44,7 @@ Just download, copy, and follow the steps below!
 
 You should now have a folder containing the prepared BepInEx files.
 
-> ⚠️ Download the BepInEx installation ZIP provided in this repository, not the entire repository using **Code → Download ZIP**.
+> ⚠️ For the BepInEx installation, download the installation ZIP provided in this repository. Step 4 separately uses **Code → Download ZIP** to get the updated `OC2HostUtilities` folder.
 
 **Once extracted, continue to Step 2.**
 
@@ -101,7 +101,40 @@ If you already have BepInEx installed, back up your existing `BepInEx` folder be
 
 ---
 
-## Step 4 — Open Terminal
+## Step 4 — Replace the OC2HostUtilities Folder
+
+The Arcade MOD needs the macOS-compatible `OC2HostUtilities` folder provided separately in this repository. Replace the copy from the installation package with this updated folder.
+
+1. **Completely quit Overcooked! 2.**
+2. On this repository's main page, click **Code → Download ZIP** and extract the download.
+3. Inside the extracted repository folder, find the top-level [OC2HostUtilities](./OC2HostUtilities) folder. Copy the **whole folder**, including its subfolders.
+4. In your Overcooked! 2 game folder, open **BepInEx → plugins**.
+5. If `OC2HostUtilities` already exists there, move it to a backup location **outside `BepInEx/plugins`** first.
+6. Copy the updated `OC2HostUtilities` folder into `BepInEx/plugins`.
+
+The destination should look like this:
+
+```text
+Overcooked! 2/
+└── BepInEx/
+    └── plugins/
+        └── OC2HostUtilities/
+            ├── HostUtilities.dll
+            └── v1.9.1/
+                └── HostUtilities.dll
+```
+
+Keep all resource folders included with `OC2HostUtilities` as well; the tree above only highlights the DLL locations.
+
+**Replace the whole `OC2HostUtilities` folder; do not merge it with an older copy.** Avoid creating a nested `OC2HostUtilities/OC2HostUtilities` folder, and keep your other plugins and `BepInEx/config` unchanged.
+
+> Updating the Arcade MOD may overwrite its macOS compatibility fixes. Use a compatible replacement for the version you install; do not copy an older patched DLL into a newer MOD version.
+
+**Folder replaced? Continue to Step 5.**
+
+---
+
+## Step 5 — Open Terminal
 
 Don't worry! You only need to copy and paste one command.
 
@@ -113,7 +146,7 @@ A Terminal window will open.
 
 ---
 
-## Step 5 — Enable BepInEx
+## Step 6 — Enable BepInEx
 
 Copy the following command:
 
@@ -129,7 +162,7 @@ That's normal!
 
 The command usually produces no output when successful.
 
-**Continue to Step 6.**
+**Continue to Step 7.**
 
 ### ❌ If you see:
 
@@ -143,7 +176,7 @@ Go back to Step 2 and check your game folder.
 
 ---
 
-## Step 6 — Get Your Steam Launch Command
+## Step 7 — Get Your Steam Launch Command
 
 Copy this command into Terminal:
 
@@ -167,7 +200,7 @@ The command automatically uses your Mac username.
 
 ---
 
-## Step 7 — Set Steam Launch Options
+## Step 8 — Set Steam Launch Options
 
 1. Open **Steam**.
 2. Go to **Library**.
@@ -175,7 +208,7 @@ The command automatically uses your Mac username.
 4. Click **Properties**.
 5. Select **General**.
 6. Find **Launch Options**.
-7. Paste the command you copied in Step 6.
+7. Paste the command you copied in Step 7.
 
 It should look similar to:
 
@@ -193,11 +226,11 @@ Make sure the command ends with:
 
 Keep the quotation marks around the file path.
 
-**Done? Continue to Step 8.**
+**Done? Continue to Step 9.**
 
 ---
 
-## Step 8 — Restart Steam and Launch the Game
+## Step 9 — Restart Steam and Launch the Game
 
 1. Completely quit Steam using **Steam → Quit Steam**.
 2. Open Steam again.
@@ -212,7 +245,7 @@ If the game opens successfully, continue to the next step.
 
 # ✅ Check If BepInEx Is Working
 
-## Step 9 — Check the BepInEx Log
+## Step 10 — Check the BepInEx Log
 
 Open your game folder again:
 
