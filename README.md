@@ -37,7 +37,7 @@ Just download, copy, and follow the steps below!
 ## Step 1 — Download the Files
 
 1. Open this repository.
-2. Find the provided BepInEx installation ZIP file.
+2. Find the provided BepInEx installation ZIP file. - (just 放到和胡闹厨房app同级文件夹下.zip)
 3. Click the ZIP file.
 4. Click **Download**.
 5. Double-click the downloaded ZIP to extract it.
