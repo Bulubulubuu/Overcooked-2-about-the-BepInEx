@@ -1,0 +1,12 @@
+{
+  "version": "0.4.0",
+  "target": "/Users/bulubulubulu/Library/Application Support/Steam/steamapps/common/Overcooked! 2/BepInEx/plugins/CustomLevelFloorShaderFix.dll",
+  "backup": "/Users/bulubulubulu/Library/Application Support/Steam/steamapps/common/Overcooked! 2/BepInEx/backups/CustomLevelFloorShaderFix/20261019-224150/CustomLevelFloorShaderFix.v0.3.dll",
+  "previousSha256": "ba579abeecc3252ad03b45a2eeec4438cdfbd238359b29422bf784b8989db5b2",
+  "installedSha256": "f063a09ee46b53eb56145e325b03ed1207ff0daacd05297ff84e6ba856b7b0a1",
+  "scenes": [
+    "s_gl_level",
+    "s_gl_level 2"
+  ],
+  "visualVerificationPending": true
+}
