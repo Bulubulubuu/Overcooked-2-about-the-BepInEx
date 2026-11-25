@@ -1,0 +1,1123 @@
+{
+  "date": "2026-11-25",
+  "scene_count": 100,
+  "info_bundle_count": 11,
+  "indexed_cab_count": 293,
+  "serialized_files_parsed": 200,
+  "scene_parse_failures": 0,
+  "compiled_against": "installed Unity 2017.4.8f1 and BepInEx assemblies",
+  "policy_checks_passed": 12,
+  "runtime_verification": false,
+  "scenes": [
+    {
+      "set": "grand_V5.2",
+      "scene": "s_grand_chefs",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "grand_V5.2",
+      "scene": "s_grand_chefs_2",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "grand_V5.2",
+      "scene": "s_grand_chefs_3",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "grand_V5.2",
+      "scene": "s_grand_chefs_4",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "grand_V5.2",
+      "scene": "s_grand_chefs_5",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "jonnylevelset3.4",
+      "scene": "s_jonny_1",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "jonnylevelset3.4",
+      "scene": "s_jonny_1-2",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "jonnylevelset3.4",
+      "scene": "s_jonny_2",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4,
+        "199": 1
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "jonnylevelset3.4",
+      "scene": "s_jonny_3",
+      "parsed": true,
+      "renderer_types": {
+        "23": 3
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "jonnylevelset3.4",
+      "scene": "s_jonny_3-2",
+      "parsed": true,
+      "renderer_types": {
+        "23": 3
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "jonnylevelset3.4",
+      "scene": "s_jonny_3-3",
+      "parsed": true,
+      "renderer_types": {
+        "23": 3
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "jonnylevelset3.4",
+      "scene": "s_jonny_4",
+      "parsed": true,
+      "renderer_types": {
+        "23": 9
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "jonnylevelset3.4",
+      "scene": "s_jonny_5",
+      "parsed": true,
+      "renderer_types": {
+        "23": 2
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "jonnylevelset3.4",
+      "scene": "s_jonny_6",
+      "parsed": true,
+      "renderer_types": {
+        "23": 5
+      },
+      "local_materials": 4,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "jonnylevelset3.4",
+      "scene": "s_jonny_7",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4
+      },
+      "local_materials": 4,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "nono",
+      "scene": "s_nono_1",
+      "parsed": true,
+      "renderer_types": {
+        "23": 2
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "nono",
+      "scene": "s_nono_2",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "nono",
+      "scene": "s_nono_3",
+      "parsed": true,
+      "renderer_types": {
+        "23": 259,
+        "137": 826,
+        "199": 89
+      },
+      "local_materials": 32,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "nono",
+      "scene": "s_nono_4",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "nono",
+      "scene": "s_nono_5",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "nono",
+      "scene": "s_nono_6",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1,
+        "199": 1,
+        "212": 1
+      },
+      "local_materials": 3,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "nono",
+      "scene": "s_nono_7",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1,
+        "199": 1,
+        "212": 1
+      },
+      "local_materials": 3,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "nono",
+      "scene": "s_nono_8",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_1_1",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_1_2",
+      "parsed": true,
+      "renderer_types": {},
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_1_3",
+      "parsed": true,
+      "renderer_types": {},
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_1_4",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_1_5",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_1_6",
+      "parsed": true,
+      "renderer_types": {},
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_2_1",
+      "parsed": true,
+      "renderer_types": {
+        "23": 6,
+        "199": 2
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_2_2",
+      "parsed": true,
+      "renderer_types": {
+        "23": 2
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_2_3",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_2_4",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_3_1",
+      "parsed": true,
+      "renderer_types": {
+        "23": 7
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_3_2",
+      "parsed": true,
+      "renderer_types": {},
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_3_3",
+      "parsed": true,
+      "renderer_types": {
+        "23": 9,
+        "199": 3
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_3_4",
+      "parsed": true,
+      "renderer_types": {
+        "23": 15
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_4_1",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_4_2",
+      "parsed": true,
+      "renderer_types": {
+        "23": 3
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_4_3",
+      "parsed": true,
+      "renderer_types": {
+        "23": 2
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_4_4",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_5_1",
+      "parsed": true,
+      "renderer_types": {
+        "23": 9,
+        "199": 7
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_5_2",
+      "parsed": true,
+      "renderer_types": {
+        "199": 10
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_5_3",
+      "parsed": true,
+      "renderer_types": {
+        "23": 3,
+        "199": 7
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_5_4",
+      "parsed": true,
+      "renderer_types": {},
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_5_5",
+      "parsed": true,
+      "renderer_types": {
+        "23": 6,
+        "199": 7
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_5_6",
+      "parsed": true,
+      "renderer_types": {
+        "23": 8,
+        "199": 9
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_6_1",
+      "parsed": true,
+      "renderer_types": {},
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_6_2",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_6_3",
+      "parsed": true,
+      "renderer_types": {
+        "23": 20
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "oc1_story",
+      "scene": "s_oc1_story_6_4",
+      "parsed": true,
+      "renderer_types": {
+        "23": 16,
+        "199": 9
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_1",
+      "parsed": true,
+      "renderer_types": {
+        "212": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_10",
+      "parsed": true,
+      "renderer_types": {
+        "212": 1
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_11",
+      "parsed": true,
+      "renderer_types": {
+        "212": 2
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_12",
+      "parsed": true,
+      "renderer_types": {
+        "212": 1
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_13",
+      "parsed": true,
+      "renderer_types": {
+        "212": 1
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_14",
+      "parsed": true,
+      "renderer_types": {
+        "212": 1
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_15",
+      "parsed": true,
+      "renderer_types": {
+        "212": 1
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_2",
+      "parsed": true,
+      "renderer_types": {
+        "212": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_3",
+      "parsed": true,
+      "renderer_types": {
+        "212": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_4",
+      "parsed": true,
+      "renderer_types": {
+        "212": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_5",
+      "parsed": true,
+      "renderer_types": {
+        "212": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_6",
+      "parsed": true,
+      "renderer_types": {
+        "212": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_7",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1,
+        "199": 16
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_8",
+      "parsed": true,
+      "renderer_types": {
+        "212": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "pear15",
+      "scene": "s_pear_9",
+      "parsed": true,
+      "renderer_types": {
+        "212": 1
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "rw_v0.71",
+      "scene": "s_rw_1",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "rw_v0.71",
+      "scene": "s_rw_2",
+      "parsed": true,
+      "renderer_types": {
+        "23": 3
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "rw_v0.71",
+      "scene": "s_rw_3",
+      "parsed": true,
+      "renderer_types": {},
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "rw_v0.71",
+      "scene": "s_rw_4",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "rw_v0.71",
+      "scene": "s_rw_5",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "rw_v0.71",
+      "scene": "s_rw_6",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "rw_v0.71",
+      "scene": "s_rw_7",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4,
+        "199": 2
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "rw_v0.71",
+      "scene": "s_rw_8",
+      "parsed": true,
+      "renderer_types": {
+        "23": 60,
+        "199": 8
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "rw_v0.71",
+      "scene": "s_rw_9",
+      "parsed": true,
+      "renderer_types": {
+        "23": 14,
+        "199": 8
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "test_level",
+      "scene": "s_test_level",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "test_level",
+      "scene": "s_test_level_2",
+      "parsed": true,
+      "renderer_types": {
+        "23": 8
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "test_level",
+      "scene": "s_test_level_3",
+      "parsed": true,
+      "renderer_types": {},
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "test_level",
+      "scene": "s_test_level_4",
+      "parsed": true,
+      "renderer_types": {
+        "23": 9
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "test_level",
+      "scene": "s_test_level_5",
+      "parsed": true,
+      "renderer_types": {
+        "23": 2
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_1",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_10",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4,
+        "212": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_11",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1,
+        "212": 4
+      },
+      "local_materials": 2,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_12",
+      "parsed": true,
+      "renderer_types": {
+        "23": 25
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_13",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_14",
+      "parsed": true,
+      "renderer_types": {
+        "23": 16
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_15",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_16",
+      "parsed": true,
+      "renderer_types": {},
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_17",
+      "parsed": true,
+      "renderer_types": {
+        "23": 9,
+        "199": 8
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_18",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_19",
+      "parsed": true,
+      "renderer_types": {
+        "23": 1
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_2",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4
+      },
+      "local_materials": 1,
+      "unresolved_cab": [
+        "cab-a3ecec56a6fe783b46b5ec5c5ce2caca"
+      ],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_20",
+      "parsed": true,
+      "renderer_types": {
+        "23": 26,
+        "199": 8
+      },
+      "local_materials": 11,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_3",
+      "parsed": true,
+      "renderer_types": {
+        "23": 18,
+        "199": 1
+      },
+      "local_materials": 0,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_4",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_5",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_6",
+      "parsed": true,
+      "renderer_types": {
+        "23": 2
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_7",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_8",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4,
+        "199": 16
+      },
+      "local_materials": 1,
+      "unresolved_cab": [],
+      "visual_verification": "not_performed"
+    },
+    {
+      "set": "young0.9.2",
+      "scene": "s_young_9",
+      "parsed": true,
+      "renderer_types": {
+        "23": 4
+      },
+      "local_materials": 1,
+      "unresolved_cab": [
+        "cab-a3ecec56a6fe783b46b5ec5c5ce2caca"
+      ],
+      "visual_verification": "not_performed"
+    }
+  ]
+}

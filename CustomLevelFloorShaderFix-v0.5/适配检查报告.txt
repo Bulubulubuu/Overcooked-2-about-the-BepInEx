@@ -1,0 +1,33 @@
+适配检查报告（2026-11-25）
+
+范围：当前 OC2DIYLevel/levels。只读检查，没有修改安装目录、关卡或存档。
+
+场景文件：100；序列化文件：200；解析失败：0。
+关卡 info 资源包：11；已索引 CAB 标识：293。
+
+场景分布：
+- grand_V5.2：5 个场景
+- jonnylevelset3.4：10 个场景
+- nono：8 个场景
+- oc1_story：28 个场景
+- pear15：15 个场景
+- rw_v0.71：9 个场景
+- test_level：5 个场景
+- young0.9.2：20 个场景
+
+只有 info 包、未见 s_* 场景的目录：muxixiao12、star、my（适配0.11，记得重新替换）。这可能是前置或资源包用途，不直接判定缺关卡。
+
+明确发现：
+- 材质使用 _ColourAlpha 和 _DiffuseTexture，旧版未覆盖。
+- 大炮、告示牌、雨效存在于已解析场景中，例如 pear7、young8/17、rw9 含大炮相关对象；pear7 含 PFX_ConfettiRain。名称能证明对象存在，不能证明具体渲染效果正常。
+- v0.4 日志仅记录进入 young1/2/4/6/7/8/11；该补丁记录的替换次数为0。因此日志不足以判定其余场景已适配。
+
+待核查：
+- young2、young9 引用了 cab-a3ecec56a6fe783b46b5ec5c5ce2caca，未在已索引的插件资源包和 OSX StreamingAssets 中匹配。该检查不涵盖游戏全部资源来源，不能直接认定缺文件。
+- 最新日志中 DIYLevelFastInit 的 Resource failure hooks 报 Unsupported Assembly-CSharp MVID: d3261219-cba6-42e3-963b-428b7e130c3d。这是其他插件的版本适配问题，本次材质补丁未修改它。
+- 日志另有 young0.9.2/.diylevel-fastinit 原始记录文件不存在的错误；本次未删除或修复 FastInit 缓存。
+
+验证：
+- 新 DLL 使用当前游戏组件编译通过。
+- 12 项规则检查通过，覆盖 Gl 特例边界、粒子/透明/UI 禁止不透明兜底、实际新增贴图字段。
+- 未启动游戏或逐关验证画面。不能将静态解析成功视作画面修复成功。
