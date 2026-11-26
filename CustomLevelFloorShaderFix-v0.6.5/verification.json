@@ -1,0 +1,15 @@
+{
+  "version": "0.6.5",
+  "discovered_scene_count": 130,
+  "scene_catalog_warnings": 0,
+  "star_profile_catalog_checks": 22,
+  "workflow_checks": 41,
+  "base_checks": 12,
+  "local_language_checks": 25,
+  "test1_trail_checks": 13,
+  "game_reference_errors": 0,
+  "in_game_rendering_verified": false,
+  "modsettings_modified": false,
+  "game_installation_modified": false,
+  "dll_sha256": "787cbe3474a8ff16278b6e40bb3db8d81c4b04710c081f356a191cfd3ebfbe68"
+}
