@@ -1,0 +1,14 @@
+{
+  "version": "0.6.4",
+  "workflow_checks": 41,
+  "base_policy_checks": 12,
+  "local_language_checks": 25,
+  "test1_policy_checks": 13,
+  "game_reference_errors": 0,
+  "in_game_rendering_verified": false,
+  "fallback_source": "test_1",
+  "random_road_fallback": false,
+  "network_updates": false,
+  "modsettings_modified": false,
+  "dll_sha256": "d6fe1d7fd85ac3838f720dde13d2f2e4acff7159c0e465ef8b67cc883a014f7c"
+}

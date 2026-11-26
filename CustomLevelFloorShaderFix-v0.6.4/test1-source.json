@@ -1,0 +1,31 @@
+{
+  "bundle": "test_level/info_test_level",
+  "scene": "s_test_level",
+  "fallback_target_scene": "s_young_2",
+  "main": {
+    "object": "Floor",
+    "material": "mat_city_path_02",
+    "asset": "assets/levelsets/test/materials/mat_city_path_02.mat",
+    "path_id": 610526985877103900,
+    "scale": [
+      10.0,
+      5.5
+    ]
+  },
+  "strips": {
+    "objects": [
+      "Floor (1)",
+      "Floor (2)",
+      "Floor (3)"
+    ],
+    "material": "mat_city_path_01",
+    "asset": "assets/levelsets/test/materials/mat_city_path_01.mat",
+    "path_id": -7566651897043342686,
+    "scale": [
+      6.0,
+      1.5
+    ]
+  },
+  "source_verified": "static serialized data",
+  "in_game_load_verified": false
+}
